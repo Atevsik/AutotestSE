@@ -1,2 +1,0 @@
-# AutotestSE
-Python AutotestSE 
