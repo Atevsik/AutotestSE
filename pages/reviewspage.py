@@ -38,8 +38,8 @@ class ReviewsPage:
         vid_sporta_button_rev = self.browser.find_elements(By.XPATH, '//div[@class="se-material-filter-menu"]')
 
     def hockey_button(self):
-        football_button = self.browser.find_element(By.XPATH, '''//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),"Хоккей")]''')
-        football_button.click()
+        hockey_button = self.browser.find_element(By.XPATH, '''//a[contains(@class,'se-material-filter-menu__item-button')][contains(text(),"Хоккей")]''')
+        hockey_button.click()
         assert self.browser.current_url == 'https://www.sport-express.ru/hockey/reviews/', "OSHIBKA УРЛА"
 
     def hocckey_page_rev(self):
