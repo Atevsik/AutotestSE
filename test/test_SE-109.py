@@ -9,3 +9,4 @@ def test_onlinepage(browser):
     onlinepage.button_photo_online()
     onlinepage.vid_sporta_button_online()
     onlinepage.vid_materiala_button_online()
+    onlinepage.pokazat_online()

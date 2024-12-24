@@ -37,4 +37,6 @@ class OnlinePage:
         materials_tenis_online = self.browser.find_element(By.XPATH, '//div[@class="se-online-list-page__items"]')
         assert self.browser.current_url == 'https://www.sport-express.ru/tennis/online/', "Не правильынй урл"
 
-
+    def pokazat_online(self):
+        pokazat_online = self.browser.find_element(By.XPATH, '//a[contains(text(),"Показать еще")]')
+        pokazat_online.click()
