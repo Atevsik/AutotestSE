@@ -1,7 +1,7 @@
 from pages.detalvideo import DetalVideo
 from selenium.webdriver.common.by import By
 
-def test_detalnews(browser):
+def test_detalvideo(browser):
     detalvideo = DetalVideo(browser)
     detalvideo.open_detal_video()
     detalvideo.menu_nadlogo()

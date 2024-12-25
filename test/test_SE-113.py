@@ -1,7 +1,7 @@
 from pages.newsphoto import NewsPhoto
 from selenium.webdriver.common.by import By
 
-def test_detalnews(browser):
+def test_detalphoto(browser):
     newsphoto = NewsPhoto(browser)
     newsphoto.open_photo_news()
     newsphoto.menu_nadlogo()
