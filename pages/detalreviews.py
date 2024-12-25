@@ -36,7 +36,7 @@ class DetalReviews:
         assert self.browser.current_url == 'https://www.sport-express.ru/football/L/russia/premier/2024-2025/calendar/tours/', "Не правильный урл календаря"
 
     def selector_season(self):
-        selector_season = self.browser.find_element(By.XPATH, '//span[@id="select2-submenu_level_b_2-container"]')
+        selector_season = self.browser.find_element(By.XPATH, '//div[@class="se19-select-wr mb_20"]')
 
     def tour(self):
         tour = self.browser.find_element(By.XPATH,'//tbody/tr[28]/th[1]')
