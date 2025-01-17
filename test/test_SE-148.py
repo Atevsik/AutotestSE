@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
-def test_info(browser):
+def test_poisk(browser):
     poisk = Poisk(browser)
     poisk.open()
     poisk.menu_nad_logo()

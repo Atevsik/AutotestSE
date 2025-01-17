@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
-def test_podpiska(browser):
+def test_contakts(browser):
     contakt = Contakt(browser)
     contakt.open()
     contakt.h1()
