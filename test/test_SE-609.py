@@ -4,7 +4,7 @@ from pages.matchpagehockey import MatchPageHoc
 
 
 
-def test_nhltable(browser):
+def test_matchpagehoc(browser):
     matshpage = MatchPageHoc(browser)
     matshpage.open()
     matshpage.menu_nad_logo()
