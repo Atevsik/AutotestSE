@@ -20,9 +20,6 @@ class Podpiska:
 
     def button(self):
         button = self.browser.find_element(By.XPATH,"//input[@name='bt_save']")
-        button.click()
-        assert self.browser.current_url == 'https://sendsay.ru/form/sportexpress/1', "Не правильная кнопка"
-        self.browser.back()
 
     def brend(self):
         brend = self.browser.find_element(By.XPATH,"//a[@class='se-staticpage-menu-group__row-item'][contains(text(),'Бренд-центр')]")

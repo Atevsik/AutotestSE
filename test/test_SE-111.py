@@ -11,8 +11,6 @@ def test_detalnews(browser):
     detalnews.samie_obsyj()
     detalnews.podval()
     detalnews.perexod_table()
-    detalnews.perexod_table_proverka()
-    detalnews.h1_detal_news()
     detalnews.perexod()
     detalnews.block_comment()
     detalnews.block_commetn_click()

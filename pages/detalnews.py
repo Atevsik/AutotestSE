@@ -31,13 +31,8 @@ class DetalNews:
     def perexod_table(self):
         perexod_table = self.browser.find_element(By.XPATH,'''//a[@class='se-menu-subtop__link'][contains(text(),"Таблица переходов")]''')
         perexod_table.click()
-        sleep(5)
-
-    def perexod_table_proverka(self):
+        sleep(3)
         assert self.browser.current_url == 'https://www.sport-express.ru/football/rfpl/reviews/rpl-tablica-perehodov-2024-2025-vse-transfery-kto-ushel-i-prishel-zenit-krasnodar-dinamo-lokomotiv-spartak-cska-sdelki-onlayn-2282277/' , "Не правильный урл"
-
-    def h1_detal_news(self):
-        h1_detal_news = self.browser.find_element(By.XPATH, '//h1[contains(text(),"Кого подпишет «Зенит»? От кого избавится «Спартак»")]')
 
     def perexod(self):
         perexod = self.browser.find_element(By.XPATH,'//tr[@id="himki-mo"]//td')

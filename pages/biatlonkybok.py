@@ -57,6 +57,7 @@ class BiatlonKybok:
     def knopa(self):
         knopa = self.browser.find_element(By.XPATH,"//div[@class='se-view-toggle__view']")
         knopa.click()
+        sleep(3)
 
     def proverka(self):
         proverka = self.browser.find_element(By.XPATH,"//span[normalize-space()='309']")

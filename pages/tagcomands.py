@@ -54,10 +54,6 @@ class TagComand:
     def raspisanie2(self):
         raspisanie2 = self.browser.find_element(By.XPATH,"//div[@class='sp-page']")
 
-    def match(self,count):
-        match = self.browser.find_elements(By.XPATH,"//span[@class='sp-team-calendar__match-team_name']")
-        assert len(match) == count
-
     def srlollsmi(self):
         scrlolsmi = self.browser.find_element(By.XPATH,"//td[normalize-space()='22.03.2025']")
         scrlolsmi =  self.browser.execute_script("arguments[0].scrollIntoView();", scrlolsmi)

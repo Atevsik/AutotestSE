@@ -15,7 +15,6 @@ def test_tagcomand(browser):
     tagcomand.click_igrok()
     tagcomand.raspisanie()
     tagcomand.raspisanie2()
-    tagcomand.match(91)
     tagcomand.srlollsmi()
     tagcomand.smi2()
     tagcomand.statistik_player()

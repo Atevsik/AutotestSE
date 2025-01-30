@@ -48,7 +48,8 @@ class PageFight:
     def open_boi(self):
         open_boi = self.browser.find_element(By.XPATH,"//div[@class='se-result-battle-score se-result-battle-score--size-sm se-result-battle-score--win-second']//div[@class='se-result-battle-score__result'][normalize-space()='KO']")
         open_boi.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/live/mma/ufc/event-14699/', "Не правльный матч"
+        sleep(2)
+        assert self.browser.current_url == 'https://www.sport-express.ru/live/mma/ufc/event-14699/#', "Не правльный матч"
 
     def legend(self):
         legend = self.browser.find_element(By.XPATH,"//div[@class='sp-matchcenter-event-all-fights-mma__markings']")

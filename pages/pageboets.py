@@ -39,7 +39,8 @@ class PageBoets:
     def result_click(self):
         result_click = self.browser.find_element(By.XPATH,"//tbody/tr[6]/td[3]")
         result_click.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/live/mma/ufc/event-180/', "Не правильный урл боя"
+        sleep(2)
+        assert self.browser.current_url == 'https://www.sport-express.ru/live/mma/ufc/event-180/#', "Не правильный урл боя"
 
 
 

@@ -50,6 +50,7 @@ class NhlTable:
     def conference(self):
         conference = self.browser.find_element(By.XPATH,"//a[contains(text(),'Конференции')]")
         conference.click()
+        sleep(3)
         assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/nhl/2024-2025/?type=conference', "Не правильная конференция"
 
     def ottava(self):

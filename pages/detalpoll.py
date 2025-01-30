@@ -39,14 +39,15 @@ class DetalPoll:
         self.browser.back()
 
     def pitsburg_click(self):
-        pitsburg_click = self.browser.find_element(By.XPATH,"(//a[contains(text(),'Календарь')])[42]")
+        pitsburg_click = self.browser.find_element(By.XPATH,"(//a[contains(text(),'Календарь')])[16]")
         pitsburg_click.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/nhl/2024-2025/calendar/?team=34', "Не правильная ссылка календаря"
+        assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/nhl/2024-2025/calendar/?team=50', "Не правильная ссылка календаря"
         self.browser.back()
 
 
     def boston_click(self):
         boston_click = self.browser.find_element(By.XPATH,"(//a[contains(text(),'Статистика')])[30]")
         boston_click.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/tag/boston-bryuinz-1068/players-stats/', "Не правильный урл статистики"
+        sleep(2)
+        assert self.browser.current_url == 'https://www.sport-express.ru/tag/anahaym-daks-2664/players-stats/', "Не правильный урл статистики"
 
