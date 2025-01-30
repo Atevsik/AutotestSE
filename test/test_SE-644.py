@@ -4,7 +4,7 @@ from pages.biatlonmedal import BiatlonMir
 
 
 
-def test_biatlon_mir(browser):
+def test_biatlon_medal(browser):
     biatlon = BiatlonMir(browser)
     biatlon.open()
     biatlon.menu_nad_logo()

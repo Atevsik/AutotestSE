@@ -4,7 +4,7 @@ from pages.lijikalend import LijiCelndar
 
 
 
-def test_biatlon_mir(browser):
+def test_liji_calend(browser):
     liji = LijiCelndar(browser)
     liji.open()
     liji.menu_nad_logo()
