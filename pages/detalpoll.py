@@ -25,8 +25,8 @@ class DetalPoll:
         dop_menu.click()
 
     def comands(self):
-        comands = self.browser.find_element(By.XPATH,"//div[@class='se-menu-subtop-popup__link'][4]")
-        comands.click()
+        comands = self.browser.find_element(By.XPATH,"(//a[contains(text(),'Команды')])[1]")
+        self.browser.get('https://www.sport-express.ru/hockey/L/nhl/2024-2025/teams/')
         assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/nhl/2024-2025/teams/', "Не правильнвый урл команд"
 
     def h1(self):

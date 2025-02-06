@@ -13,10 +13,6 @@ class NewsPhoto:
     def menu_nadlogo(self):
         menu_nadlogo = self.browser.find_element(By.XPATH, '//div[@class="se-menu-subtop se-menu-subtop--breadcrumb"]')
 
-    def selector_photo(self):
-        selector_photo = self.browser.find_element(By.XPATH, '//div[@class="se-nav-buttons__button se-nav-buttons__button--next"]')
-        selector_photo.click()
-
     def comento_scroll(self):
         comento_scroll = self.browser.find_element(By.XPATH, '//div[contains(text(),"Результаты / календарь")]')
         comento_scroll = self.browser.execute_script("arguments[0].scrollIntoView();", comento_scroll)

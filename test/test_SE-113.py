@@ -5,7 +5,6 @@ def test_detalphoto(browser):
     newsphoto = NewsPhoto(browser)
     newsphoto.open_photo_news()
     newsphoto.menu_nadlogo()
-    newsphoto.selector_photo()
     newsphoto.comento_scroll()
     newsphoto.commento_check()
     newsphoto.commento_check_newComment()

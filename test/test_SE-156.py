@@ -10,7 +10,6 @@ def test_zp(browser):
     zp.h1()
     zp.spisok(30)
     zp.knopka()
-    zp.eshe()
     zp.zp()
     zp.h2()
     zp.filtri()

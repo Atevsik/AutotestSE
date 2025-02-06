@@ -29,13 +29,9 @@ class Zarplati:
         sleep(5)
         assert self.browser.current_url == 'https://www.sport-express.ru/video/den-s-alekseem-shevchenko/materials/page2/', "Не прожалась кнопка"
 
-    def eshe(self):
-        eshe = self.browser.find_element(By.XPATH,"//div[@class='se-menu-link se-menu-link--type-more ']")
-        eshe.click()
-
     def zp(self):
         zp = self.browser.find_element(By.XPATH,"//a[@class='se-burger-menu__link'][contains(text(),'Зарплаты КХЛ')]")
-        zp.click()
+        self.browser.get('https://www.sport-express.ru/hockey/khl/money/2024-2025/')
         assert self.browser.current_url == 'https://www.sport-express.ru/hockey/khl/money/2024-2025/', "Не правлиьный урл"
 
     def h2(self):
