@@ -24,6 +24,7 @@ class Reklama:
     def autor(self):
         autor = self.browser.find_element(By.XPATH,"//a[@class='se-staticpage-menu-group__row-item'][contains(text(),'Редакция и авторы')]")
         autor.click()
+        sleep(5)
         assert self.browser.current_url == 'https://www.sport-express.ru/editorial/', "Не правлиьный урл авторов"
 
     def h1(self):

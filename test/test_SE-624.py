@@ -7,7 +7,6 @@ from pages.figyrkanew import FigurkaNew
 def test_figurka_new(browser):
     fw = FigurkaNew(browser)
     fw.open()
-    fw.menu_nad_logo()
     fw.filtrs()
     fw.itap()
     fw.america()

@@ -11,7 +11,7 @@ class FormylaCalendar:
         self.browser = browser
 
     def open(self):
-        self.browser.get('https://www.sport-express.ru/autosport/formula1/results/')
+        self.browser.get('https://www.sport-express.ru/autosport/formula1/results/?season=2024')
 
     def h1(self):
         h1 = self.browser.find_element(By.XPATH,"//span[contains(text(),'Результаты')]")
