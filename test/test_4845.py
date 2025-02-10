@@ -4,7 +4,7 @@ from pages.footballolimp import FootballOlimp
 
 
 
-def test_football_mc(browser):
+def test_football_olimp(browser):
     foot_olimp = FootballOlimp(browser)
     foot_olimp.open()
     foot_olimp.menu_nad_logo()

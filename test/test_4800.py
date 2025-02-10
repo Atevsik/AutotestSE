@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from pages.hocckeystat import HocckeyStat
 
 
-def test_hockeystat(browser):
+def test_hocckeystat(browser):
     hockey = HocckeyStat(browser)
     hockey.open()
     hockey.menu_nad_logo()

@@ -3,7 +3,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 
-def test_calendar(browser):
+def test_calenda_nhl(browser):
     calend = CalendarNhl(browser)
     calend.open()
     calend.tablo()
