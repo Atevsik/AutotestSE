@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from pages.storypage import StoryPage
 
-def test_photopages(browser):
+def test_storypage(browser):
     storypage = StoryPage(browser)
     storypage.open_story()
     storypage.h1_news_story()

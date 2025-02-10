@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.videopage import VideoPage
 from time import sleep
 
-def test_reviewspage(browser):
+def test_videopage(browser):
     videopage = VideoPage(browser)
     videopage.open_video()
     videopage.h1_news_video()
