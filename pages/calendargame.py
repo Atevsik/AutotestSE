@@ -24,6 +24,9 @@ class CalendarGame:
     def podval(self):
         podval = self.browser.find_element(By.XPATH, '//footer[@class="se-footer"]')
 
+    def reklama(self):
+        reklama = self.browser.find_element(By.XPATH, "//div[@id='adfox_15645683733586888']")
+
 
 
 
