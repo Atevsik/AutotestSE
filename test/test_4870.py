@@ -4,7 +4,7 @@ from pages.tennisbill import TennisBilly
 
 
 
-def test_tennis_big(browser):
+def test_tennis_bill(browser):
     bill = TennisBilly(browser)
     bill.open()
     bill.news()

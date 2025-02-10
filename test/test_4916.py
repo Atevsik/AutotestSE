@@ -4,7 +4,7 @@ from pages.f1pilot import FormylaPailot
 
 
 
-def test_formyla_konstryktor(browser):
+def test_formyla_pilot(browser):
     f1_pilot = FormylaPailot(browser)
     f1_pilot.open()
     f1_pilot.text()

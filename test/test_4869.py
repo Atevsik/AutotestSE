@@ -4,7 +4,7 @@ from pages.tennisdevis import TennisDevis
 
 
 
-def test_tennis_big(browser):
+def test_tennis_devis(browser):
     devis = TennisDevis(browser)
     devis.open()
     devis.reviews()

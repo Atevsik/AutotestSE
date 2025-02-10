@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from pages.f1trassa import FormylaTrasa
 
 
-def test_formyla_konstryktor(browser):
+def test_formyla_trassa(browser):
     f1_trass = FormylaTrasa(browser)
     f1_trass.open()
     f1_trass.menu_nad_logo()
