@@ -17,12 +17,6 @@ class FootbalGolPas:
         top3 = self.browser.find_elements(By.XPATH,"//div[@class='se19-players-statistics__player se19-player-statistics']")
         assert len(top3) == count
 
-    def tukavin(self):
-        tukavin = self.browser.find_element(By.XPATH,"((//a[contains(text(),'Максим Глушенков')])[1]")
-        tukavin.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/football/L/player/51241/seasons/2024-2025/', "Не правильный глушенков"
-        self.browser.back()
-
     def reklama(self):
         reklama = self.browser.find_element(By.XPATH, "//div[@id='adfox_15645683733586888']")
 

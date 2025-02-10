@@ -27,6 +27,7 @@ class TennisWTA:
     def match(self):
         match = self.browser.find_element(By.XPATH,"//tbody/tr[10]/td[2]/a[1]")
         match.click()
+        sleep(4)
         assert self.browser.current_url == 'https://www.sport-express.ru/tennis/L/wta/Singapore/2025/', "Не правильный матч"
         self.browser.back()
 

@@ -41,7 +41,7 @@ class FormylaTrasa:
         usa = self.browser.find_element(By.XPATH,"//span[contains(text(),'Гран-при США')]")
         usa.click()
         sleep(3)
-        assert self.browser.current_url == 'https://www.sport-express.ru/autosport/formula1/calendar/gran-pri-ssha_2024-1135/', "Не правильная США"
+        assert self.browser.current_url == 'https://www.sport-express.ru/autosport/formula1/calendar/gran-pri-ssha_2025-1159/', "Не правильная США"
 
 
 

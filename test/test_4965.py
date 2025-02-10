@@ -8,7 +8,6 @@ def test_rpl_gol(browser):
    gol_pass = FootbalGolPas(browser)
    gol_pass.open()
    gol_pass.top3(3)
-   gol_pass.tukavin()
    gol_pass.reklama()
    gol_pass.asist()
    gol_pass.reklama()

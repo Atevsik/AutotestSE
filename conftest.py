@@ -9,7 +9,7 @@ def browser():
     options = Options()
     options.page_load_strategy="eager"
     service = Service()
-    options.add_argument('--headless')
+    #options.add_argument('--headless')
     browser = webdriver.Firefox(service=service, options=options) # options=options - в скобочках
     browser.maximize_window()
     yield browser
