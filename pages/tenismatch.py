@@ -24,6 +24,7 @@ class TenisMatch:
     def perexodturnir(self):
         perexodturnir = self.browser.find_element(By.XPATH,"//tbody/tr[6]/td[2]/a[1]")
         perexodturnir.click()
+        sleep(5)
         assert self.browser.current_url == "https://www.sport-express.ru/tennis/L/atp/adelaide/2025/", 'Не правильный урл турнира'
         self.browser.back()
 

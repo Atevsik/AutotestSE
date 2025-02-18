@@ -22,6 +22,7 @@ class TennisDevis:
     def result(self):
         result = self.browser.find_element(By.XPATH,"//a[@class='se-menu-subtop__link'][contains(text(),'Результаты')]")
         result.click()
+        sleep(4)
         assert self.browser.current_url == 'https://www.sport-express.ru/tennis/L/davis/', "Не правильный девис"
 
     def god(self):

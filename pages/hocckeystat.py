@@ -43,10 +43,10 @@ class HocckeyStat:
     def stat(self):
         stat = self.browser.find_element(By.XPATH,"//a[contains(text(),'Статистика')]")
         stat.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/world/2024/statistic/', "Не правильная статистика"
+        assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/world/2025/statistic/', "Не правильная статистика"
 
     def h1(self):
-        h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Чемпионат мира. Статистика. Лидеры')]")
+        h1 = self.browser.find_element(By.XPATH,"//h1[contains(text(),'Чемпионатз мира. Статистика. Лидеры')]")
 
     def kevin(self):
         kevin = self.browser.find_element(By.XPATH,"(//img[@title='Фиала Кевин'])[1]")
