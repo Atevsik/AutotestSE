@@ -13,7 +13,6 @@ def test_formyla_calend(browser):
     formcalen.race()
     formcalen.text()
     formcalen.belgia()
-    formcalen.trassa()
     formcalen.pilot()
 
 

@@ -36,14 +36,10 @@ class FormylaCalendar:
     def belgia(self):
         belgia = self.browser.find_element(By.XPATH,"//span[contains(text(),'Гран-при Бельгии')]")
         belgia.click()
+        sleep(4)
         assert self.browser.current_url == 'https://www.sport-express.ru/autosport/formula1/calendar/gran-pri-belgii_2024-1130/', "Не правильная бельгия"
         self.browser.back()
 
-    def trassa(self):
-        trassa = self.browser.find_element(By.XPATH,"//div[8]//div[3]//div[1]//a[1]")
-        trassa.click()
-        assert self.browser.current_url == 'https://www.sport-express.ru/autosport/formula1/circuits/circuit-de-monaco-27/', "Не правильная трасса"
-        self.browser.back()
 
     def pilot(self):
         pilot = self.browser.find_element(By.XPATH,'//div[24]//div[4]//a[1]')

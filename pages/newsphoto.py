@@ -16,11 +16,12 @@ class NewsPhoto:
     def comento_scroll(self):
         comento_scroll = self.browser.find_element(By.XPATH, '//div[contains(text(),"Результаты / календарь")]')
         comento_scroll = self.browser.execute_script("arguments[0].scrollIntoView();", comento_scroll)
-        sleep(5)
+        sleep(7)
 
     def commento_check(self):
         commento_check = self.browser.find_element(By.XPATH,'//span[contains(text(),"Еще комментарии")]')
         commento_check.click()
+        sleep(4)
 
     def commento_check_newComment(self):
         commento_check_newComment = self.browser.find_element(By.XPATH, '//div[@id="comment-text-12590332"]')

@@ -41,7 +41,7 @@ class TagComand:
         assert len(igroki) == count
 
     def click_igrok(self):
-        click_igrok = self.browser.find_element(By.XPATH,"зн")
+        click_igrok = self.browser.find_element(By.XPATH,"//body[1]/div[1]/section[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[4]/a[1]")
         click_igrok.click()
         assert self.browser.current_url == 'https://www.sport-express.ru/hockey/L/player/10621/', "Не правильный урл тега"
         self.browser.back()
